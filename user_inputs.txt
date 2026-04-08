@@ -1,0 +1,11 @@
+Transformational AI: Analyzing Ecommerce Large Datasets for Machine Learning
+Completed by: Alexis Tamayo
+—————————————-
+
+Question 1: The dataset contains columns like rating, title, text, images, asin, parent_asin, user_id, timestamp, and verified_purchase. Data types include strings, floats, integers, booleans, and lists. Each review is a row linking a product (asin) to a customer rating and review text.
+Question 2: The .head() output shows the first 5 rows in plain text format, which is more compact than the HTML table. Some columns appear truncated due to display width limits, making it harder to read than the full DataFrame rendering.
+Question 3: We used pd.set_option() to customize pandas display: max_columns to None to show all columns, width to 1000 for wider output, and max_colwidth to 50 for readability. We also used .head(10) to show 10 rows instead of the default 5.
+Question 4: The Reviews dataset is customer-centric with ratings, review text, and user info. The Metadata dataset is product-centric with title, price, average_rating, and product details. They share the asin field as a common link.
+Question 5: The .info() method is most insightful because it shows column names, non-null counts, data types, and memory usage in one call, letting you quickly identify missing data and assess data quality.
+Question 6: Most highly rated products are concentrated in the lower price range with a right-skewed distribution. The majority of products rated 4.5 or above are priced under $100.
+Question 7: There is no strong linear correlation between price and rating. Products at various price points can achieve high ratings, indicating price alone does not determine customer satisfaction.
